@@ -1,0 +1,192 @@
+/*Style for navBar*/
+.whole {
+  background: linear-gradient(to right, #FF8066, #FFCC66);
+}
+
+.menu {
+  text-align: right;
+  float: right;
+  }
+
+a {
+  color: black;
+  font-family: "Copperplate", "Courier New", fantasy;
+  font-size: 30px;
+  /*padding: 0px 0px;*/
+  word-wrap: normal;
+  display: inline-block;
+}
+
+.test ul li:hover::after{
+  width:100%;
+}
+
+/* maybe delete */
+a:link {
+  text-decoration: none;
+}
+/* maybe delete */
+a:visited {
+  text-decoration: none;
+}
+
+.test ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.test ul li::after{
+  content:'';
+  width:0%;
+  height:2px;
+  background: #e16060;
+  display: block;
+  margin: auto;
+  transition:0.5s; 
+
+}
+
+/* maybe delete */
+a:active {
+  text-decoration: underline;
+}
+
+/*Style for pantry*/
+.pantry {
+  padding: 24px;
+}
+
+.title {
+  color: black;
+  font-size: 36px;
+  font-family: 'Lucida Grande';
+  position:absolute; left:100px; top:150px
+}
+
+.title_diet {
+  color: black;
+  font-size: 36px;
+  font-family: 'Lucida Grande';
+  position:absolute; left:800px; top:0px
+}
+
+.background {
+  height: 650px;
+  width: 550px;
+  background-color: #B61414;
+  position: absolute; left:50px; top:250px;
+  padding: 20px;
+  border-radius: 30px;
+}
+.background_right {
+  height: 650px;
+  width: 550px;
+  background-color: #B61414;
+  position: absolute; left:1000px; top:250px;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+.inside {
+  height: 600px;
+  width: 500px;
+  background-color: white;
+  position: relative; left:10px; top:10px;
+  padding: 20px;
+  border-radius: 30px;
+  overflow: scroll
+}
+
+.inside_right {
+  height: 600px;
+  width: 500px;
+  background-color: white;
+  position: relative; left:10px; top:10px;
+  padding: 20px;
+  border-radius: 30px;
+  overflow: scroll
+}
+
+.icon_text {
+  position: relative; left: 50px; top: 0px;
+}
+
+.title_divider {
+  width: 100%;
+  height: 3px;
+  background-color: hsla(0, 0%, 59.2%, 0.2)
+}
+
+.title_Bigdivider {
+  width: 100%;
+  height: 3px;
+  background-color: rgba(0, 0, 0, 0.911)
+}
+
+.select {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  max-width: 300px;
+  gap: 1px;
+}
+
+.select_item {
+  padding: 10px;
+  cursor: pointer;
+  font-family: 'Heebo', sans-serif;
+  text-align: center;
+  border-radius: 3px;
+  background: white;
+  transition: background 0.1s;
+}
+
+.select_item-selected {
+  background: #B61414;
+  color: white;
+}
+
+.dropbtn {
+  background-color: #B61414;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.cook {
+ background-color: #B61414;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  position: absolute; left: 900px; top:150px;
+  color: white;
+}
+
+.dropdown {
+  position: absolute; left:1050px; top:150px;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #FFCC66; color: black;}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Cookbook</title>
+    <link href="cookbook.css" rel="stylesheet" type="text/css" />
+
+  </head>
+
+  <body class = "whole">
+  <!-- navigation bar -->
+    <div class = "navBar">
+      <a class="logo" href="index.html"> <img src="Logo.png" alt="Logo" ALIGN = "left" width = "150" height = "150">
+      <nav class = "menu">
+        <div class = "test"> 
+          <ul> 
+            <li><a href="index.html">HOME</a></li>
+            </li>|</li>
+            <li><a href="cookbook.html">COOKBOOK</a></li>
+            </li>|</li>
+            <li><a href="career.html">CAREER/EDUCATION</a></li>
+            </li>|</li>
+            <li><a href="donate.html">DONATION</a></li>
+            </li>|</li>
+            <li><a href="community.html">COMMUNITY PAGE</a></li>
+            </li>|</li>
+            <li><a href="shopping.html">SHOPPING</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    </table>
+<br></br>
+  <!-- end navigation bar -->
+
+  <!--title: pantry-->
+    <div class = "pantry">
+      <header class = "pantry">
+        <h1 class = "title">Pantry</h1>
+      </header>
+    </div>
+    <div class="background">
+      <div class="inside">
+        <div class = "vegetables">
+          <a class="logo" href="cookbook.html"> <img src="https://www.kindpng.com/picc/m/70-702682_1-cup-of-vegetables-bowl-of-vegetables-cartoon.png" ALIGN = "left" width = "100" height = "100"></a>
+          <div style="display:inline-block; vertical-align: top">
+          <h1 class = "icon_text">Food</h1>
+          </div>
+          <div class = "title_divider"></div>
+            <form action="">
+              <select name="vegetables[]" class="custom-select" multiple>
+                <option value="onion">onion</option>
+                <option value="garlic">garlic</option>
+                <option value="potato">potato</option>
+                <option value="mushroom">mushroom</option>
+                <option value="carrot">carrot</option>
+                <option value="jalapeno">mushroom</option>
+                <option value="avocado">avocado</option>
+                <option value="bell pepper">bell pepper</option>
+                <option value="brocollo">broccoli</option>
+                <option value="eggplant">eggplant</option>
+                <option value="lettuce">lettuce</option>
+                <option value="beetroot">beetroot</option>
+                <option value="okra">okra</option>
+                <option value="bok choy">bok choy</option>
+                <option value="brussels sprout">brussels sprout</option>
+                <option value="cabbage">cabbage</option>
+                <option value="radish">radish</option>
+                <option value="cauliflower">cauliflower</option>
+                <option value="fennel">fennel</option>
+                <option value="lettuce">lettuce</option>
+                <option value="scallion">scallion </option>
+                <option value="ginger">ginger</option>
+                <option value="cucumber">cucumber</option>
+                <option value="tomato">tomato</option>
+                <option value="milk">milk</option>
+                <option value="strawberry">strawberry</option>
+                <option value="orange">orange</option>
+                <option value="blueberry">blueberry</option>
+                <option value="pineapple">pineapple</option>
+                <option value="apple">apple</option>
+                <option value="apple">apple</option>
+                
+                <option value="banana">banana</option>
+                <option value="sweet potato">sweet potato</option>
+                <option value="tomato">tomato</option>
+                <option value="buttermilk">buttermilk</option>
+                <option value="icecream">icecream</option>
+                <option value="frosting">frosting</option>
+                <option value="eggs">eggs</option>
+                <option value="yogurt">yogurt</option>
+                <option value="curd">curd</option>
+                <option value="baking soda">baking sods</option>
+                <option value="panko">panko</option>
+                <option value="self-raising flour">self-raising flour</option>
+                <option value="honey">honey</option>
+                <option value="chilli powder">chilli powder</option>
+                <option value="turmeric">turmeric</option>
+                <option value="pepper">pepper</option>
+                <option value="sunflower oil">sunflower oil</option>
+                <option value="coconut oil">coconut oil</option>
+                <option value="sesame oil">sesame oil</option>
+                <option value="cooking spray">cooking spray</option>
+             </select>
+            </form>  
+                <script src="script.js"></script>
+     
+        </div>
+          
+    </div>
+    </div>
+  <!--end of pantry title-->
+
+  <!--right side-->
+  <div class = "cook">
+  <button class = "cook_btn" onclick="cook()">Cook!</button>
+  </div>
+  <div class = "dropdown">
+  <button class="dropbtn">Type of Diet</button>
+  <div class="dropdown-content">
+    <a href="vegan.html">Vegan</a>
+    <a href="#">Vegetarian</a>
+    <a href="#">Gluten Free</a>
+  </div>
+</div>
+
+<div class="background_right">
+      <div class="inside_right">
+        <div class = "reciepies">
+        <p>Here is the list of recipies based on your selection</p>
+        <p id="recipies_list"></p>
+        <div class = "dish1">
+        <img src="https://selecthealth.org/-/media/selecthealth/blogs/post/2020/06/strawberry_smoothie_blog_lg.ashx" ALIGN = "left" width = "200" height = "200" id="strawberrysmoothieimg" hidden></br>
+        <a href="https://www.allrecipes.com/recipe/20792/b-and-ls-strawberry-smoothie/">Recipe</a>
+        </div>
+        </div>
+      </div>
+  </div>
+  </div>
+  <!--end of right side-->
+  <script type="text/javascript">
+  var selectedValues = [];
+  function cook() {
+    var ele
+    document.getElementById("recipies_list").innerHTML=" Strawberry Smoothie " + selectedValues.toString();
+    document.getElementById("strawberrysmoothieimg").hidden=false;
+  }
+  </script>
+    <!-- Start of ChatBot (www.chatbot.com) code -->
+<script type="text/javascript">
+    window.__be = window.__be || {};
+    window.__be.id = "62118f25fc18760007cce2ea";
+    (function() {
+        var be = document.createElement('script'); be.type = 'text/javascript'; be.async = true;
+        be.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.chatbot.com/widget/plugin.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(be, s);
+    })();
+</script>
+<!-- End of ChatBot code -->
+
+  </body>
+
+  </html>
